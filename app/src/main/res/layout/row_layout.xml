@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="7.5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+   <androidx.cardview.widget.CardView
+       android:id="@+id/movieItemCardView"
+       android:padding="5dp"
+       app:cardElevation="10dp"
+       android:elevation="10dp"
+       app:cardCornerRadius="3dp"
+       android:background="#fff"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <LinearLayout
+          android:paddingBottom="10dp"
+           android:paddingTop="5dp"
+           android:orientation="vertical"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:layout_weight="1"
+               android:id="@+id/movieImageView"
+               android:layout_width="175dp"
+               android:layout_height="175dp"/>
+           <TextView
+               android:id="@+id/movieNameTextView"
+               android:layout_marginTop="10dp"
+               android:textStyle="bold"
+               android:textColor="#000"
+               android:text="Movie Name"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:textSize="16dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+   </androidx.cardview.widget.CardView>
+
+</LinearLayout>
